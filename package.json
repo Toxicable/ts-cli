@@ -1,0 +1,27 @@
+{
+  "name": "ts-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node src/cli.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Toxicable/ts-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toxicable/ts-cli/issues"
+  },
+  "homepage": "https://github.com/Toxicable/ts-cli#readme",
+  "dependencies": {
+    "@types/node": "^9.3.0",
+    "@types/webpack": "^3.8.3",
+    "ts-loader": "^3.2.0",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0"
+  }
+}
