@@ -4,9 +4,10 @@ console.log(jack)
 
 var t= 3;
 
-console.log(" ano    asdasdasd   s   ther nam," + {})
+console.log("somre string" + {})
 
 setTimeout(() => {
+  debugger
     console.log('done')
 }, 5000)
 

@@ -19,22 +19,7 @@ export function makeWebpackConfig(options: CliOptions, outfilePath: string): web
       ]
     },
     target: "node",
-    resolve: { extensions: [".ts", ".js"] },
-    // Make sure we include all node_modules etc
-    externals: [/(node_modules|main\..*\.js)/],
-    plugins: [
-      new webpack.ContextReplacementPlugin(
-        // fixes WARNING Critical dependency: the request of a dependency is an expression
-        /(.+)?angular(\\|\/)core(.+)?/,
-        path.join(__dirname, "src"), // location of your src
-        {} // a map of your routes
-      ),
-      new webpack.ContextReplacementPlugin(
-        // fixes WARNING Critical dependency: the request of a dependency is an expression
-        /(.+)?express(\\|\/)(.+)?/,
-        path.join(__dirname, "src"),
-        {}
-      )
-    ]
+    devtool: 'source-map',
+    resolve: { extensions: [".ts"] },
   };
 }
