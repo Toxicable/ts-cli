@@ -19,7 +19,9 @@ export function makeWebpackConfig(options: CliOptions, outfilePath: string): web
       ]
     },
     target: "node",
-    devtool: 'source-map',
+    //devtool: 'cheap-module-eval-source-map',
+     devtool: 'source-map',
+    // devtool: 'inline-source-map',
     resolve: { extensions: [".ts"] },
   };
 }

@@ -26,7 +26,7 @@ const configFile: CliOptions = JSON.parse(fs.readFileSync(path.join(cwd, '.ts-cl
 
 if (commandOptions.command === 'serve') {
 
-  const outfilePath = path.join(process.cwd(), configFile.outputPath);
+  const outfilePath = path.join(cwd, configFile.outputPath);
   const outfile = path.join(outfilePath, 'bundle.js');
 
   const webpackConfig = makeWebpackConfig(configFile, outfilePath);
